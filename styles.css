@@ -1,0 +1,88 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.display {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    background-color: #000;
+    color: #0f0;
+    caret-color: #0f0;
+}
+
+/* Add a cursor to the input field */
+.display {
+    border-right: none;
+}
+
+.keyboard {
+    display: inline-block;
+    background-color: #000;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    background-color: #0f0;
+    color: #000;
+    border: 1px solid #0f0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.key:hover {
+    background-color: #000;
+    color: #0f0;
+}
+
+.key:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.8) inset;
+}
+
+
+.space-key{
+    flex-grow: 5;
+}
+
+@media (max-width: 1080px) {
+    .keyboard {
+        width: 100%;
+    }
+    .key {
+        margin: 5px;
+    }
+}
+
+/* Number keys styling */
+.number {
+    font-size: 14px;
+    color: #0f0;
+    border: 1px solid #0f0;
+    background-color: transparent;
+}
